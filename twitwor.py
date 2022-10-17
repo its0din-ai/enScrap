@@ -1,13 +1,11 @@
 import tweepy
 import twitworConfig
 
-# DONT DELETE ALL CODE ABOVE :3
-
-auth = tweepy.Client(twitworConfig.bearer)
+#  To use this script, you need to create a twitworConfig.py file with the following variables:
+#  bearerToken = "your bearer token"
+auth = tweepy.Client(twitworConfig.bearerToken)
 
 search = str(input("Tulis username sini ngab >> "))
-# search = "vestiazeta"
-# total = 10
 total = int(input("Berapa jumlah tweet yang mau diambil? [10-100] >> "))
 
 try:
